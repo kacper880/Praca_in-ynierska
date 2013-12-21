@@ -1,0 +1,34 @@
+Klasa DatagramPacket
+
+	Pakiety datagramów są stosowane w celu realizacji usługi dostarczania pakietów bezpołączeniowych. Każdy pakiet jest kierowany z jednego komputera w naszym przypadku telefonu do drugiego, w oparciu o informacje zawarte w tym pakiecie. Informacje te dokładnie są opisane w kolejnym akapicie. Jak już wcześniej wspomniano pakiety te są wysyłane w różnych kolejnościach, niekiedy nie docierają do adresata .Wysyłając jakąkolwiek wiadomość za pomocą komunikacji UDP niezbędne jest zaimplementowanie klasy, zawierająca pakiet danych, który następnie będzie wysyłany i odbierany ze strony klienta do serwera przy pomocy DatagramSocket.  
+Występuje sześć konstruktorów publicznych przedstawiających wysyłane pakiety:
+•	DatagramPacket (byte[] data, int length)
+-	gdzie pierwszy parametr oznacza dane przedstawione w postaci bajtów, a drugi to określa długość tych danych
+•	DatagramPacket (byte[] data,  int offset,  int length)
+-	parameter offset określa offset bufora danych 
+•	DatagramPacket (byte[] data, int offset, int length, InetAddress host, int aPort)
+-	kolejne parametry określają adres IP urządzenia, oraz na jakim porcie dane urządzenie jest w stanie odbierać pakiety 
+•	DatagramPacket (byte[] data, int length, InetAddress host, int port)
+•	DatagramPacket (byte[] data, int length, SocketAddress sockAddr)
+-	ostatni parametr określa adres docelowego urządzenia.
+•	DatagramPacket (byte[] data, int offset, int length, SocketAddress sockAddr)
+Dodatkowo zdefiniowano 12 metod wykorzystywanych do wysłania danych:
+•	getAddress() – pobranie IP adresu z pakietu datagramu
+•	getData() – pobranie danych z pakietu
+•	getLength() -  pobranie rozmiaru danych znajdujących się w data gramie
+•	getOffset() - pobieranie przesunięcia danych przechowywanych w  pakiecie
+•	getPort() – pobranie numeru portu docelowego lub źródłowego, którym wyśle się dane
+•	getSocketAddress() – pobranie adresu hosta i portu, którym będą wysłane dane
+•	setAdress(InetAddress addr) – ustawienie IP adresu dla hosta docelowego
+•	setData(byte[] buf) – ustawienie bufora danych dla pakietu w postaci bajtów
+•	setData(byte[] data, int offset, int byteCount) – ustawienie bufora danych dla pakietu
+•	setLength(int length) – ustawienie długości pakietu datagramu
+•	setPort(int aPort) – ustawienie portu docelowego dla pakietu
+•	getSocketAddress(SocketAddress sockAddr) -  ustawienie adresu gniazda dla pakietów datagramu
+
+Wszystkie zdefiniowane metody jak i konstruktory zostały zdefiniowane po raz pierwszy na poziome API równym 1.
+
+
+
+
+	
