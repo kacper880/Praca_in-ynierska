@@ -1,0 +1,13 @@
+Budowa nagłówka UDP
+
+Protokół UDP nie zapewnia dostarczanie wiadomości do wyższych warstw niż został on zdefiniowany. Jak już wspomniałem w poprzednim rozdziale protokół znajduje się w warstwie transportowej, czyli na pewno nadana wiadomość zostanie dostarczona do warstw niższych niż czwarta warstwa czyli sieciowej, łącza danych oraz fizycznej. Natomiast nie gwarantuje on, że dane trafią do warstw sesji, prezentacji i aplikacji. 
+Nagłówek składa się z czterech szesnasto bitowych pół określających:
+•	Port źródłowy – jest to pole, z którego wysyłamy pakiet danych. Zawiera 16 – bitowe numery portów, które używamy do odnajdywania procesu oczekującego na dany datagram. Pole to jest opcjonalne, czyli jeśli jest stosowane zawiera ono numer portu do którego należy wysłać wiadomość. W przeciwnym wypadku, jeśli nie jest używane jego wartość powinna wynosić 0.  
+•	Port docelowy – pole to określa wartość numeru portu docelowego,  którym zostaną dostarczone dane. W porównaniu do portu źródłowego, zastosowanie portu źródłowego jest obowiązkowe.
+•	Długości nadawanego pakietu –  określa liczbę oktetów datagramu UDP, zawierające nagłówek oraz dane użytkownika. Minimalna długość wynosi 8 co jest równe długości nagłówka.
+•	Sumy kontrolnej –  pole to podobnie jak port źródłowy jest polem opcjonalnym i nie trzeba jej stosować,  wartość zero oznacza, że nie obliczono żadnej sumy. Suma kontrolna jedynie zapewnia, że dane nie zostały uszkodzone.
+
+ 
+Rys 1 
+
+
