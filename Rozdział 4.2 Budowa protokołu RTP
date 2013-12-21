@@ -1,0 +1,16 @@
+Budowa protokołu RTP
+
+Nagłówek  protokołu RTP składa się z czterech pól. Są to między innymi:
+•	Typ ładunku – określa typ i sposób kodowania przenoszonej informacji. Pole to jest 7 bitowe, więc wartości te są z przedziału od 0 do 127.  Przedział od 96 do 127 jest zarezerwowany dla dynamicznego typu ładunku. Dynamiczny typ ładunku jest negocjowany przez którykolwiek protokół sygnalizacyjny, który jest używany aby ustanowić połączenie VoIP.
+•	Numer sekwencyjny – pole to jest 16 bitowe. Jego wartość zwiększa się o jeden w przypadku, gdy wysyłamy pakiet. Pozwala na identyfikację tych pakietów z ustalonej sekwencji. Wykorzystywany między innymi do wykrywania utraconych pakietów oraz przywracania sekwencji.
+•	Znacznik czasu – pole to jest inicjowane tak samo jak numer sekwencyjny przypadkowymi wartościami. Wartość pola wynosi 32 bajty .Częstotliwość zegara zależy od typu ładunku.  Dla medium transmisyjnego audio z pojedynczym kanałem częstotliwość ta wynosi 8000 Hz. W przypadku dźwięku znacznik czasowy dla każdego okresu próbkowania zwiększa się o 1.
+•	Pole SSRC (Synchronization Source Identifier) – wartość pola wynosi 32 bity. „Identyfikuje źródło strumienia RTP. Każdy strumień w sesji RTP powinien mieć odrębny SSRC”.   Pole to identyfikuje źródło synchronizacji.  Wartość jest wybierana losowo, poprzez synchronizację dwóch źródeł w tej samej sesji RTP, które mają takie same identyfikatory.  „Prawdopodobieństwo wybrania tego samego identyfikatora przez wiele źródeł jest znikome,  lecz w przypadku wystąpienia kolizji należy zaimplementować mechanizmy unikających takich przypadków” .
+
+Dodatkowo zdefiniowano kilka innych dodatkowych pół. Są to między innymi:
+•	Rozszerzenie (extension) –  lokalizuje rozszerzony nagłówek pomiędzy standardowym nagłówkiem, a typem ładunku
+•	Marker –  jest 1 bitowy, używany na poziomie aplikacji.
+•	Lista CSRC –  (Contributing Source IDs) wylicza wkład źródeł do strumieniowania, które są generowane z wielu źródeł.
+•	Wersja – pole to określa wersję protokołu RTP. Wersja ta zdefiniowana została w normie RFC 1889.
+•	Padding -  w momencie, gdy Padding bitu jest ustalony, pakiety zawierają jeden lub więcej dodatkowych oktetów na końcu, które nie są częścią ładunku.  „Ostatni oktet paddingu zawiera liczbę, określającą jak wiele oktetów paddingu ma być zignorowanych” .  Padding może być stosowany do przenoszenia kilku pakietów RTP do niższych warstwy danych protokołu. 
+
+
