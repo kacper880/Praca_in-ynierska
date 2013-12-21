@@ -1,0 +1,45 @@
+Wstęp
+	
+W dzisiejszych czasach telefon komórkowy nie służy do wykonywania podstawowych operacji takich jak przeprowadzanie rozmów, wysyłanie wiadomości tekstowych lub zapisywanie kontaktów. Powstało wiele systemów mobilnych, których funkcjonowanie opiera się na odpalaniu pojedynczych aplikacji odpowiadających za powiadamianie użytkownika o lokalizacji, nagrywanie dźwięku itd. Jednym z nich jest Android, który jest systemem otwartym, co oznacza, że każdy z użytkowników może modyfikować kod i dopasowywać go do własnych potrzeb.
+	Obecnie system mobilny Android zajmuje ponad 75 % udziału na rynku, wyprzedzając pięciokrotnie swoich głównych konkurentów takich jak iOS lub Windows Phone.  Android jest jedną z największych platform mobilnych i szybko się rozwija. Każdego dnia miliony użytkowników tej platformy , wykorzystuje system między innymi do ściągania wielu przydatnych, bezpłatnych aplikacji  umożliwiających: naukę języków obcych, ustalania treningów, uzyskanie tytułu ulubionej piosenki.  Wszystkie te aplikacje klient może nabyć w wirtualnym sklepie „Google Play”. Z drugiej strony ma możliwość instalowania aplikacji, będących poza Google Play . Wspomniany system dostarcza klasy, narzędzia, metody,  potrzebnych do tworzenia i dystrybucji końcowych aplikacji.  Architektura przystosowuje interfejs użytkownika (UI) tak, aby wyglądał  odpowiednio na różnych urządzeniach.  Przykładowo tworzymy aplikację, przystosowaną na różne telefony. Wtyczka ADT oferuje oprogramowanie (IDE), pozwalające na do pisania i debugowania programów.  Używając oprogramowania mamy możliwość testowania napisanych aplikacji w wbudowanym emulatorze lub na telefonie. Testując na telefonie, automatycznie aplikacja instaluje się w systemie. Za systemem przemawia możliwość umieszczania nie tylko ikon, ale i także widżetów, które np. powiadamiają o aktualnym planie lekcji.  Początkujący użytkownik może mieć problemy z obsługą niektórych funkcji. Otwartość Androida wynika z tego, że działa on na praktycznie na każdym urządzeniu. Ogromne możliwości systemu są odwrotnie proporcjonalne do niezawodność. Układ ma skłonności do zawieszania się po kilku miesiącach od kupna.  Popularność platformy wpływa na jej bezpieczeństwo .Należy uważać na to jakie aplikacje instalujemy na swoim telefonie, nawet, gdy pochodzą one ze sklepu Google.  Telefony wyposażone w system operacyjny Android są o wiele tańsze od konkurencji.  
+Podsumowując jest to idealne rozwiązanie dla osób, które chcą mieć swój system pod kontrolą oraz tworzyć nowe intuicyjne aplikacje. Poza tym system dostarcza wiele darmowych aplikacji, które można pozyskać za pośrednictwem sklepu Google Play.
+	W porównaniu do poprzedniego systemu, system IOS jest systemem zamkniętym. Oznacza to, że użytkownik nie może kontrolować swojego systemu w sensie instalować aplikacji, które nie pochodzą ze sklepu producenta. Twórcy oprogramowania zadbali o to aby system sam w sobie był intuicyjny, aby każdy użytkownik mógł go obsłużyć.  Prostota wiąże się z tym, że nie wprowadzono widżetów.  IOS instaluje się na trzech rodzajach urządzeń, a mianowicie na Ipadach, Iphonach i ipod Touch.  Wszystkie dostępne aplikacje tworzą pewną całość, dzięki czemu IOS jest mniej podatny na zawieszenia.  Kolejną zaletą jest błyskawiczna aktualizacja oprogramowania.  Przydatną funkcją jest opcja przywracania aplikacji, w przypadku gdy zgubimy telefon.  Występuje wiele zalet wyróżniających obecnie omawiany system od innych. Są to między innymi: 
+•	świetna obsługa gestów i multitouch
+•	ogromna liczba dostępnych programów w sklepie App Store , jest ich ponad 390 tys.
+•	Możliwość pobierania aplikacji przez iTunes
+•	W przypadku gier występuje wiele aplikacji, które nie są dostępne na innych platformach typu Android czy Windows Phone
+•	Powiadomienia w trybie push
+•	Wideorozmowy przy użyciu programu FaceTime
+•	 Obsługa technologii AirPlay umożliwiającej łączenie z urządzeniami sieciowymi takimi jak Apple TV czy telewizorem
+•	 Obsługa technologii AirPrint, która umożliwia drukowanie w chmurze
+•	 Obsługa funkcji HDR w aparacie
+System mobilny IOS nie jest pozbawiony wad, są to między innymi:
+•	Brak Adobe Flash Player
+•	Brak obsługi kart pamięci
+•	Brak obsługi radia
+•	Integrację z serwisami społecznościowymi można uzyskać poprzez aplikacje wytworzone przez firmy trzecie
+•	Pliki możemy jedynie synchronizować poprzez program iTunes
+•	Ostatnie,  najważniejsze to cena urządzeń 
+Reasumując jest to system dla osób, które nie mają zamiaru ingerować w ustawienia systemu.  Cenią sobie wygodę obsługi oraz czas dostępu do zasobów. Wszystkie wymienione zalety wiążą się z ponoszeniem kosztów.
+Kolejnym i ostatnim liczącym się rozwiązaniem na rynku systemów mobilnych jest Windows Phone. W porównaniu do poprzednich rozwiązań, system składa się z interfejsu kafelkowego, dzięki rozmiarom może łatwo wybrać  odpowiednią pozycje.  Kafelki mają swoją zaletę. Odpowiednio mogą wyświetlać więcej informacji niż zwykłe ikony.  Tak samo jak IOS jest to system zamknięty, czyli nie ma możliwości zainstalowania innych aplikacji niż tych co są w sklepie. Platformę odróżnia od konkurujących rozwiązań to, że posiada ona wbudowany pakiet Microsoft Office. 
+Podstawowe zalety opisywanego systemu to:
+•	Prosty interfejs
+•	Funkcje w zorganizowane w huby, dzięki czemu łatwiej możemy zarządzać grupami aplikacji
+•	Zawiera pakiet biurowy Office Mobile wyposażony w (OneNote, Word, Exel, PowerPoint)
+•	Integracja z usługą SkyDrive
+•	Odtwarzacz Zune,  zsynchronizowany ze sklepem z muzyką
+•	Wbudowane narzędzie, ułatwiające odnalezienie zagubionego telefonu
+•	Rozbudowane mechanizmy zarządzaniem zużyciem energii
+
+System Windows Phone, pomimo wielu zalet posiada także wiele wad. Oto główne z nich:
+•	Brak interfejsu w języku Polskim
+•	Brak możliwość ustawienia własnego dzwonka, użytkownik ma do wyboru tylko dźwięki systemowe
+•	Brak obsługi kart pamięci
+•	Ubogie ustawienia systemowe
+•	Brak routera WiFi
+•	Synchronizacja plików poprzez Zune Software
+•	Cena aplikacji w sklepie Windows Marketplace.
+Podsumowując jest to idealny system dla osób, które cenią sobie telefon prosty w obsłudze i działający płynnie.  Windows Phone jest oprogramowaniem uniwersalnym, dzięki czemu ma zastosowanie w laptopie, sprzęcie mobilnym i komputerze stacjonarnym.  Platforma oferuje wiele gier, które nie są dostępne w Androidzie i IOS.  Często sprzęt wyposażony w ten system zastępuje komputer.
+Popularność systemów mobilnych zależy od kraju w, którym zostały przeprowadzone statystyki. I tak w Finlandii dominującym systemem mobilnym jest IOS. W 2012 osiągnął on ok. 36% ogólnego rynku, android natomiast uzyskał 33% udziałów na rynku. W Stanach Zjednoczonych natomiast Android w maju 2012 roku osiągnął ok. 49% udziałów, wyprzedzając IOS o prawie 10%.  W obu przypadkach system Windows Phone uzyskał ok. 5% udziału na rynku.
+Wybór z pośród trzech wymienionych systemów mobilnych zależy od preferencji użytkownika.  W przypadku, gdy dany klient, będzie chciał mieć pełną kontrolę nad system, wybierze w tym momencie Androida. Natomiast, ci co sobie cenią szybkość, nie mają zamiaru ingerować w system skłonią się ku dwóm pozostałym przedstawionym systemom.
+ 
