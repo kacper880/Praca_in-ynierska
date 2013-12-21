@@ -1,0 +1,54 @@
+Klasa DatagramSocket
+
+	Klasa DatagramSocket umożliwia wysyłanie i odbieranie porcji danych za pomocą protokołu UDP.  Pakiety datagramowe są osobno transmitowane od źródła do celu. Wysłane pakiety mogą dotrzeć w innej kolejności niż zostały nadane. Utracone pakiety podczas transmisji nie są podawane tzw. retransmisji, gdyż prawie nie możliwe jest odnalezienie ich.  Przesyłane dane za pomocą gniazda datagram nie są rozbijane na pakiety o określonym rozmiarze. W przypadku, gdy wysyłamy pakiety datagramowe, które przekraczają maksymalną przepustowość, w tym momencie dany pakiet bez żadnego ostrzeżenia odrzuca dane.  Klasa DatagramSocket jest stosowana w aplikacjach, gdzie występuje małe opóźnienie transmisji oraz toleruje się gubienie nadanych pakietów. Użyteczna jest w przypadku niektórych aplikacji serwerowych. Co więcej klasa związana z protokołem UDP może obsłużyć więcej żądań od klientów, niż jest to w przypadku protokołu TCP. 
+	Aby prawidłowo obsłużyć komunikację, należy zaimplementować wspomnianą klasę po stronie klienta jak i po stronie serwera. Klasy będą się różnić parametrami, w zależności od tego, gdzie zostaną obsłużone. W moim przypadku klient wysyła pewną wiadomość, a serwer ją odbiera i odczytuje, więc po stronie klienta należy utworzyć tzw. gniazdo, dzięki któremu zostanie nadany pakiet danych za pomocą klasy DatagramPacket.  Przypomnę, że nadany pakiet zawiera w sobie: bufor danych, długość buforu, adres serwera oraz port na którym zostanie wysłane. Tak przygotowana paczka za pomocą gniazda zostaje wysłany pakiet metodą „send”. W tym momencie, strona klienta wykonała swoją robotę. Czas na stronę serwera, czyli w skrócie odbieranie pakietu.  Po stronie serwera również deklarujemy klasę, lecz podajemy niezbędne parametry. Są to między innymi: adres serwera oraz port. Przypomnę, że porty po obu stronach muszą się zgadzać, inaczej nici z komunikacji.  Po ustaleniu powyższych informacji, czas na odbiór nadanej paczki. Do tego posłuży nam metoda „receive”  z angielskiego „odbierz”, za pomocą obiektu socket odbierzemy pakiet.
+	Występują cztery konstruktory klasy DatagramSocket. Są to między innymi:
+•	DatagramSocket()
+-     ustawienie gniazda datagramów UDP, które wykorzystują jakiekolwiek dostępne porty na adresie lokalnym.
+-     wyjątek typu „SocketException”  - w momencie, gdy wystąpił błąd podczas tworzenia gniazda 
+•	DatagramSocket(int aPort)
+-     ustawienie gniazda datagramów UDP, wykorzystujący wcześnie zdefiniowany, dostępny port na adresie lokalnym.
+-     wyjątek typu „SocketException” 
+•	DatagramSocket(int aPort, InetAddress addr)
+-	ustawienie gniazda datagramów UDP, podając odpowiedni port I adres lokalny  
+-	wyjątek typu „SocketException”
+•	DatagramSocket(SocketAddress localAddr)
+-	utworzenie nowego gniazda związanego z portem lub hostem, określonym w parametrze
+-	wyjątek typu „SocketException”
+-	wyjątek „IllegalArgumentException” – gdy dany adres jest zajęty.
+Dodatkowo zostało zdefiniowanych trzydzieści metod obsługujących klasę:
+•	bind(SocketAddress localAddr) – związanie gniazda z adresem i portem
+•	close() –  zamykanie gniazda datagramów oraz wszelkich kanałów
+•	connect(SocketAddress peer) –  połączenie gniazda z adresem i portem określone przez uczestnika
+•	connect(InetAddress address, int port) -  połączenie gniazda z adresem oraz portem
+•	disconnect() – rozłączenie gniazda datagramowego z adresem
+•	getBroadcast() - 
+•	getChannel() -  zwraca kanał przez, który był nadawany komunikat, jeśli takowy istniał
+•	getInetAddress() -  zwraca adres, przez który gniazdo łączy się aby uzyskać komunikację
+•	getLocalAddress() – zwraca lokalny adres, z którym gniazdo zostało połączone lub jest wywoływana w momencie, gdy gniazdo zostało połączone 
+•	getLocalPort() -  pobranie lokalnego portu, z którym socket jest związany
+•	getLocalSocketAddress() – zwraca adres gniazda
+•	getPort() -  pobiera pierwszy wolny port do nadawania
+•	getReceiveBufferSize() -  zwraca rozmiar otrzymanego bufora danych
+•	getRemoteSocketAddress() - zwraca adres gniazda
+•	getReuseAddress() - zwraca adres gniazda
+•	getSendBufferSize() – ustawienie rozmiaru bufora danych wysyłanych
+•	getSoTimeout() -  ustawienie czasu, w którym dane mają zostać dostarczone
+•	getTrafficClass() – zwraca ustawienia gniazda
+•	isBound() -  zwraca prawdę, gdy gniazdo jest połączone z lokalnym adresem
+•	isClosed() -  ustawienie stanu gniazda
+•	isConnected() -  sprawdzanie, czy socket jest połączony z adresem
+•	receive(DatagramPacket pack) -  odbieranie pakietów
+•	send(DatagramPacket pack) -  wysyłanie pakietów
+•	setBroadcast(boolean broadcast) - 
+•	setDatagramSocketImplFactory(DatagramSocketImplFactory fac) – ustawienie fabryki implemetacji
+•	setReceiveBufferSize(int size) – ustawienie rozmiaru odbieranego bufora danych
+•	setReuseAddress(boolean reuse) - 
+•	setSendBufferSize(int size) – ustawienie rozmiaru bufora wysyłanego 
+•	setSoTimeout(int timeout) -  ustawienie czasu odczytu danych dla gniazda w milisekundach
+•	setTrafficClass(int value) -  ustawienie wartości dla każdego pakietu wysyłanego przez to gniazdo
+
+
+
+
+	
