@@ -1,0 +1,18 @@
+Skróty i ich znaczenie
+
+•	iOS – system mobilny oparty na aplikacjach, jego głównym konkurentem jest Android
+•	Windows Phone – kolejny system mobilny
+•	Google Play – sklep, dzięki któremu jest możliwość wprowadzania własnych aplikacji, ściągania nowych za darmo lub za drobną opłatą 
+•	UI (User Interface) -   jest to wszystko co użytkownik może zobaczyć po uruchomieniu aplikacji, funkcjonalność, listy, itp.
+•	ADT (Android Development Tools) -  jest to wtyczka do kompilatora Eclipse, pozwalająca na tworzenie aplikacji przeznaczonej na Androida
+•	IDE (Integrated Development Environment) -  zestaw programistycznych narzędzi, służących do pisania aplikacji typu: kod źródłowy edytora, kompilator, debugger
+•	Emulator – wbudowany zestaw, zastępujący fizycznie telefon pod względem testowania nowo stworzonej aplikacji
+•	API (Application Programing Interface) – zestaw reguł, pozwalających na komunikację dwóch różnych aplikacji ze sobą.
+•	XML – zestaw atrybutów, potrzebnych do obsługi np. przycisku . Pliki XML zawierają także prawa dostępu, przykładowo aby przesłać przez siec coś musimy zdefiniować 
+•	Framework – zestaw składników wykorzystywanych w aplikacji
+•	TiKL – nazwa przykładowej aplikacji wykorzystująca funkcjonalność Push-to-Talk
+•	THREE_GP -  zamiennie stosuje się też 3gpp, jest tzw. kontener, który przechowuje strumienie audio i video
+•	 UDP – protokół służący do wymiany datagramów pomiędzy aplikacjami
+•	Datagram – paczka danych przesyłana między aplikacjami
+•	Layout – w skrócie jest to wygląd funkcjonalości aplikacji, po odpaleniu jej na fizycznym urządzeniu
+•	Tutorial -  jest to zbiór kroków potrzebnych do wykonania określonego zadania. Użytkownicy tworzą tzw. poradniki w formie pisemnej  lub w postaci video. 
