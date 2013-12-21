@@ -1,0 +1,26 @@
+Spis treści
+
+1.	Cel pracy
+2.	Wstęp
+2.1 Porównanie obecnie najpopularniejszych systemów mobilnych
+2.2	Ogólne informacje o API
+2.3	 Poziomy API
+2.3.1 Wybór wersji platformy i poziomu API
+2	Pierwszy rozdział – przegląd dostępnych aplikacji
+3	Drugi rozdział – Klasy do obsługi dźwięku
+3.2	MediaRecorder – wstęp o Api 
+3.3	MediaPlayer
+4	Trzeci rozdział – protokół UDP
+3.	Informacje ogólne o protokole
+3.1 Budowa nagłówka UDP
+3.2 Połączenie datagramowe 
+3.3 Klasy obsługujące połączenia datagramowe
+3.3.1 Klasa DatagramPacket 
+3.3.2 Klasa DatagramSocket
+5	Czwarty rozdział – protokół RTP
+4.1 Idea protokołu RTP
+4.2 Budowa protokołu RTP
+
+8. Piąty rozdział – badania – opóżnienia odbierania danych, stałość opóżnienia, stastyka odrzuconych danych i przechwyconych, stopień zajętości procesora.
+9. Arcitektura aplikacji – funkcjonalność aplikacji,  diagramy przypadków użycia, 
+10. Obsłużyć wszelkich wyjątków. 
