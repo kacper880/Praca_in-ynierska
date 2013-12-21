@@ -1,0 +1,78 @@
+Poziomy API
+
+Poziom API jest wartością, identyfikując Framework API oferowaną przez wersję platformy Androida. Oznacza on to, że jako programista mamy możliwość komunikowania się z urządzeniami, wyposażonymi w odpowiednie funkcje czy to funkcjonalności. 
+Wybierając odpowiedni poziom dla naszej aplikacji musimy się skupić na dwóch kwestiach, a mianowicie na:
+•	Dystrybucji czyli jak dużo urządzeń będzie w stanie obsłużyć stworzoną aplikację, która przykładowo obsługuje poziom API równy 9.
+•	Wybraniu najmniejszego poziomu API, który będzie w stanie obsłużyć większość urządzeń, kosztem zmniejszenia funkcjonalności w aplikacji.
+
+Platforma Android zapewnia Framework API , którego aplikacje mogą używać go do interakcji z systemem Android. Framework API składa się z:
+•	Zestawu podstawowych klas i pakietów
+•	Zestawu elementów i atrybutów XML potrzebnych do deklaracji pliku manifest
+•	Zestawu elementów i atrybutów XML potrzebnych do deklaracji i uzyskania dostępu do zasobów
+•	Zestawu intencji
+•	Zbioru uprawnień, potrzebne do  poprawnego działania aplikacji. Np. aby aplikacja zawierająca intencję wywołująca stronę internetową.  Do tego potrzebujemy uprawnienia pozwalające na połączenie z Internetem.
+
+Niektóre wersje platform Android zawiera aktualizacje dostarczanych frameworków API. 
+
+Aktualizacje Framework API są kompatybilne z poprzednimi wersjami. Tak więc, wiele zmian w API związane jest z  wprowadzaniem nowych lub zastępując istniejące funkcjonalności. Kiedy część API jest modernizowane, starsze elementy są  nie są usuwane, więc istniejące aplikacje nadal mogą je używać. W niektórych przypadkach, elementy API mogą być modyfikowane lub usuwane. Zmodyfikowane elementy zwiększają bezpieczeństwo systemu. Wszystkie inne elementy API pochodzące z wcześniejszych zmian są przenoszone do nowego API bez ich modyfikacji.
+
+Poniżej znajduje się tabela przedstawiająca do jakiej wersji androida przeznaczony jest poziom API.
+
+Wersja Platformy	Poziom API	Wersja kodu
+Android 4.3	18	JELLY_BEAN_MR2
+Android 4.2, 4.2.2	17	JELLY_BEAN_MR1
+Android 4.1, 4.1.1	16	JELLY_BEAN
+Android 4.0.3, 4.04	15	ICE_CREAM_SANDWICH_MR1
+Android 4.0
+Android 4.0.1
+Android 4.0.2	14	ICE_CREAM_SANDWICH
+Android 3.2	13	HONEYCOMB_MR2
+Android 3.1.X	12	HONEYCOMB_MR1
+Android 3.0.X	11	HONEYCOMB
+Android 2.3.4
+Android 2.3.3	10	GINGERBREAD_MR1
+Android 2.3.2
+Android 2.3.1
+Android 2.3	9	GINGERBREAD
+Android 2.2.X	8	FROYO
+Android 2.1.X	7	ECLAIR_MR1
+Android 2.0.1	6	ECLAIR_0_1
+Android 2.0	5	ECLAIR
+Android 1.6	4	DONUT
+Android 1.5	3	CUPCAKE
+Android 1.1	2	BASE_1_1
+Android 1.0	1	BASE
+
+Poziom API identyfikuje rolę serwera i zapewnia użytkownikom:
+•	Ustawienie największej wersji  Framework API jaką wspiera dana platforma Android 
+•	Opis wymaganych wersji API
+•	Na danym urządzeniu, nie zostanie zainstalowana wersja niekompatybilna z oprogramowaniem
+
+Aplikacje używają elementów manifestu, świadczone przez Framework API, aby określić minimalny i maksymalny poziom API, pod którym będziemy w stanie uruchomić aplikacje. 
+Wyróżniamy trzy atrybuty:
+
+•	android:minSdkVersion – określa on minimalny poziom APi, na podstawie, którego aplikacja się uruchomi. Jeśli nie dodamy minimalnego poziomu, to domyślnie poziom wynosi 1.
+
+•	android:target:SdkVersion – określa poziom na którym zostanie uruchomiona aplikacja. 
+
+•	Android:max:SdkVersion – określa maksymalny poziom na którym aplikacja może zostać uruchomiona
+
+W momencie gdy, użytkownik próbuje zainstalować na urządzeniu aplikację lub wprowadzić zmiany i aktualizuje aplikacje, system android na początku sprawdza atrybuty <uses-sdk> w manifeście i łączy wartości zgodnie z tym jakie  API można obsłużyć.  Aplikacja znajdzie się na telefonie w tylko wtedy, gdy zostaną zdefiniowane:
+•	Minimalny zadeklarowany poziom API musi być większy bądź równy API jakie obsługuje urządzenie 
+•	Maksymalny poziom API ma być mniejszy bądź równi API jakie obsługuje urządzenie.  W przypadku, gdy nie zadeklarujemy wartości maksymalnej, to takowa wartość nie występuje.
+
+W przypadku, gdy zainstalujemy aplikacje na platformie o niższym poziomie API niż sama ona wymaga, to program może się zawiesić, dlatego, że odwołuje się do API, które nie istnieje. System Android zapobiega takim niuansom, nie pozwalając aplikacji na instalacje jej na niższym poziomie niż jest wymagany  w wersji platformy na danym urządzeniu.
+
+Przykład:
+Mamy aplikacje obsługująca API 3. Wtedy minimalną wartość atrybutu API musimy zadeklarować jako 3.  Taka aplikacja będzie działać na platformie Android 1.5 i wzwyż, natomiast nie zostanie odpalona na platformach zawierających niższy poziom API niż został zadeklarowany.
+
+
+Wybór wersji platformy i poziomu API
+
+Generalnie powinno się kompilować aplikację w stosunku do najniższej możliwej wersji platformy, jaką stworzona aplikacja obsługuje.
+
+Po ustaleniu najniższej obsługiwanej wersji, tworzymy AVD (Android Virtual Device)  -  emulator służący do testowania stworzonego programu, używając odpowiedniej platformy i poziomu API. Dodatkowo trzeba sprawdzić, czy zadeklarowaliśmy minimalny poziom w manifeście i nadaliśmy poziom API odpowiedni dla danej wersji platformy.
+
+
+
+
