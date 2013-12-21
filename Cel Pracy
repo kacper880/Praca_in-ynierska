@@ -1,0 +1,13 @@
+
+
+Cel pracy
+
+Celem pracy jest opracowanie aplikacji, służącej do przeprowadzania rozmów pomiędzy grupą osób, wykorzystując do tego łącza bezprzewodowe: bluetooth oraz wifi.  
+Aplikacja ta ma usprawnić komunikację miedzy ludźmi, w przypadku, gdy każda z osób jest w innym miejscu i nie są w stanie się spotkać.  
+Realizując powyższy temat pracy inżynierskiej należy na początku zaznajomić się jak działają aplikacje realizujące funkcjonalność Push-to-Talk. Kolejną kwestią jest ustalenie,  jakie technologie komunikacji bezprzewodowej będzie potrzebne do przeprowadzania rozmów (Bluetooth, wifi). Jednym z ważniejszych elementów, będzie zaimplementowanie protokołu RTP, który zwraca informację o tym jaki typ danych przesyłamy i znacznik czasu.  Dodatkowo potrzebne nam będzie stworzenie protokołu RTSP, który będzie odpowiadał za to, gdzie dostarczono dane.  Kolejnym elementem będzie zbadanie maksymalnego zasięgu na jaki możemy przesyłać wiadomości głosowe w przypadku połączenia za pomocą Bluetooth lub wi-fi. Odwołując się do pierwszej technologii zasięg przy sprzyjających warunkach (otwarte przestrzenie, brak zakłóceń) wzrasta do 100 m.  Natomiast przebywając w pomieszczeniach zakres ten spada o ponad połowę, w zależności od zakłóceń mieści się w granicach od 20  do 40 m.  Druga technologia zawiera większy zasięg, zależny od przepustowości, rozmieszczenia ruterów. Wacha się on w granicach od kilku metrów do kilku kilometrów.  
+
+
+
+
+
+
