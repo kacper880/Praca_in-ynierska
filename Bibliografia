@@ -1,0 +1,53 @@
+Bibliografia
+
+	Strony internetowe:
+•	 Protokół UDP (User Datagram Protocol) [online], © 1985-2005 Microsoft Corporation, 2013,  [dostęp 18.11.2013]. Dostępny w internecie:  http://technet.microsoft.com/pl-pl/library/cc785220(v=ws.10).aspx
+•	Informacje na temat portów protokołów, dostęp: 23.10.2013, Dostęp w internecie: http://pl.wikipedia.org/wiki/Port_protokołu
+•	Porównanie mobilnych systemów Android, iOS i Windows Phone 8. Co wybrać ?, dostęp 18.09.2013, dostęp w internecie: http://www.benchmark.pl/testy_i_recenzje/android-ios-windows/strona/19860.html 
+•	RTP  Real-time Transport Protocol [online],  Network Sorcery, Inc. All rights reserved, 1998 – 2012, dostęp 20.11.2013, strony , Dostępny w internecie: http://www.networksorcery.com/enp/protocol/rtp.htm#Publications 
+•	Najważniejsze wady i zalety popularnych OS-ów [online], dostęp od 01.12.2013, dostępny w internecie: http://smartfony.play.pl/podstawy/2011/najwazniejsze-wady-i-zalety-popularnych-os-ow/ 
+•	Wikipedysta: Keisyz, Interfejs programowanie aplikacji [online], dostęp od: 8.10.2013, dostępny w internecie: http://pl.wikipedia.org/w/index.php?title=Application_Programming_Interface&oldid=36644240
+•	 Octavian Damiean, Czym jest poziom API ?, dostęp 01.12.2013 , dostępny w internecie: http://stackoverflow.com/questions/9057396/what-does-api-level-mean?answertab=active#tab-top 
+
+
+
+Norma:
+•	ISO RFC 768, J.Postel, 1980, User Datagram Protocol, 
+strony: 1-2, dostęp 01.10.2013 , dostępne w internecie: http://www.ietf.org/rfc/rfc768.txt
+
+Opis artykułu z czasopisma elektronicznego:
+•	UDP – User Datagram Protocol [online],  Techwriters Future, 2008, dostęp 16.10.2013 ,Dostępny w internecie: http://ipv6.com/articles/general/User-Datagram-Protocol.htm
+•	Dokumentacja systemu AIX [online] ,  IBM.com, dostęp 20.10.2013, Dostępny w internecie:  http://publib.boulder.ibm.com/infocenter/pseries/v5r3/index.jsp?topic=/com.ibm.aix.commadmn/doc/commadmndita/protocols_userdatagram.htm
+•	Tommi Koistinen, Protocol overview RTP and RTCP, [Online], dostęp 09.10.2013 ,Dostępne w internecie: http://www.netlab.tkk.fi/opetus/s38130/k99/presentations/4.pdf.
+•	McGraw-Hill, Multimedia over IP (RTP, RTCP, SIP, RTSP), dostęp 18.11.2013, Dostępne w internecie: http://webcache.googleusercontent.com/search?q=cache:kWP4zw_NDaEJ:medusa.sdsu.edu/network/CS596/Lectures/ch28_RT.pdf+&cd=1&hl=pl&ct=clnk&gl=pl&client=opera
+•	The Computer Language Company Inc,  Definition of API,  dostęp 30.11.2013, dostępny w internecie: http://www.pcmag.com/encyclopedia/term/37856/api
+
+Artykuł w czasopiśmie:
+•	Maciej Skorulski, Protokół komunikacyjny UDP,  strony: 1-2, dostęp : 22.10.2013, dostępny w internecie: http://students.mimuw.edu.pl/SO/Linux/Temat08/UDP.html
+
+
+Dokument elektroniczny:
+•	Cory Janssen, Real-Time Transport Protocol (RTP) [online],  dostęp 22.11.2013, Dostępny w internecie: http://www.techopedia.com/definition/4755/real-time-transport-protocol-rtp 
+•	Vladimir Toncar, About the Real Time Protocol [online],   dostęp 15.11.2013, Dostępny w internecie: http://toncar.cz/Tutorials/VoIP/VoIP_Protocols_Real_Time_Protocol.html
+•	K. Banerjee, RTP Introdution [online],  ostatnio aktualizowane 22.12.2005, dostęp 18.11.2013, Dostępny w internecie: http://www.siptutorial.net/RTP/
+•	Multimedia w systemach telekomunikacyjnych, wykład 5, dostępny w internecie od 29.05.2007,  Dostępny w internecie: http://www.politechnika.lublin.pl/dydaktyka/pliki/wyk/SM_IMUZ/?C=D;O=D
+•	Adam Wierzbicki, Zarządzanie ruchem i jakością usług w sieciach komputerowych Część 1 wykładu SKO2,  strony 1-10
+•	Dokumentacja Androida, Czym jest poziom API ? , dostęp od 12.10.2013, dostępny w internecie: http://developer.android.com/guide/topics/manifest/uses-sdk-element.html#ApiLevels
+•	Dokumentacja Androida,  Klasa DatagramPacket, dostęp 17.10.2013, dostępny w internecie: http://developer.android.com/reference/java/net/DatagramPacket.html
+•	Dokumentacja Androida, Klasa DatagramSocket, dostęp 17.10.2013, dostępny w internecie: http://developer.android.com/reference/java/net/DatagramSocket.html
+
+ 
+
+
+Rozdział w książce:
+•	Marcin Koczara, UDP vs TCP, Politechnika Rzeszowska im, Ignacego Łukasiewicza Zakład Systemów Rozproszonych, 2003, strony 3-5
+
+
+Opis fragmentu książki elektronicznej:
+
+•	Marcin Szukiewicz,  Podrozdział: Protokoły RTP (Real Time Protocol) i RTCP (Real Time Control Protocol), dostęp 16.11.2013, Dostępny w internecie: http://szmarcin.w.interia.pl/text/h323sip.html
+•	
+
+
+
+	
